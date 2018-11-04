@@ -14,12 +14,12 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="package com.Shapes; public class Shapes {     public static void main(String[] args){         /*Shape shape = new Shape();         Shape roundness = new Roundness();         Shape square = new Square(">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/img/QQ图片20181104151121.png">
-<meta property="og:updated_time" content="2018-11-04T07:47:10.815Z">
+<meta property="og:image" content="http://yoursite.com/img/继承.png">
+<meta property="og:updated_time" content="2018-11-04T10:11:18.215Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="作业一号">
 <meta name="twitter:description" content="package com.Shapes; public class Shapes {     public static void main(String[] args){         /*Shape shape = new Shape();         Shape roundness = new Roundness();         Shape square = new Square(">
-<meta name="twitter:image" content="http://yoursite.com/img/QQ图片20181104151121.png">
+<meta name="twitter:image" content="http://yoursite.com/img/继承.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -95,9 +95,13 @@
         Shape roundness = new Roundness();
         Shape square = new Square();
         Shape rhombus = new Rhombus();
+        shape.type();
         shape.draw();
+        roundness.type();
         roundness.draw();
+        square.type();
         square.draw();
+        rhombus.type();
         rhombus.draw();*/
         Shape[] A = new Shape[4];
         A[0] = new Shape();
@@ -105,32 +109,45 @@
         A[2] = new Square();
         A[3] = new Rhombus();
         for(Shape s : A){
+            s.type();
             s.draw();
         }
     }
 }
 
 class Shape{
+    public void type(){
+        System.out.print(&quot;超类爸爸:&quot;);
+    }
     public void draw(){
         System.out.println(&quot;我是楼下所有人的爸爸&quot;);
     }
 }
 class Roundness extends Shape{
+    public void type(){
+        System.out.print(&quot;圆形:&quot;);
+    }
     public void draw(){
         System.out.println(&quot;我似鸽圆，莫得感情，也莫得钱&quot;);
     }
 }
 class Square extends Shape{
+    public void type(){
+        System.out.print(&quot;方形:&quot;);
+    }
     public void draw(){
         System.out.println(&quot;讲真的我现在有点方&quot;);
     }
 }
 class Rhombus extends Shape{
+    public void type(){
+        System.out.print(&quot;菱形:&quot;);
+    }
     public void draw() {
         System.out.println(&quot;菱形(冷漠)&quot;);
     }
 }
-</code></pre><p><img src="/img/QQ图片20181104151121.png" alt="example1"></p>
+</code></pre><p><img src="/img/继承.png" alt="example1"></p>
 
       
     </div>
