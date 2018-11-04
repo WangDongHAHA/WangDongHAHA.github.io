@@ -7,14 +7,19 @@
   
   <title>作业一号 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="package com.Shapes; public class Shapes {     public static void main(String[] args){         /*Shape shape = new Shape();         Shape roundness = new Roundness();         Shape square = new Square(">
+<meta property="og:type" content="article">
 <meta property="og:title" content="作业一号">
 <meta property="og:url" content="http://yoursite.com/2018/11/04/作业一号/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="package com.Shapes; public class Shapes {     public static void main(String[] args){         /*Shape shape = new Shape();         Shape roundness = new Roundness();         Shape square = new Square(">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-04T07:04:12.844Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104151149761.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNDUzNjEy,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2018-11-04T07:24:31.930Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="作业一号">
+<meta name="twitter:description" content="package com.Shapes; public class Shapes {     public static void main(String[] args){         /*Shape shape = new Shape();         Shape roundness = new Roundness();         Shape square = new Square(">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20181104151149761.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNDUzNjEy,size_16,color_FFFFFF,t_70">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -83,11 +88,54 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>package com.Shapes;</p>
+<pre><code>public class Shapes {
+    public static void main(String[] args){
+        /*Shape shape = new Shape();
+        Shape roundness = new Roundness();
+        Shape square = new Square();
+        Shape rhombus = new Rhombus();
+        shape.draw();
+        roundness.draw();
+        square.draw();
+        rhombus.draw();*/
+        Shape[] A = new Shape[4];
+        A[0] = new Shape();
+        A[1] = new Roundness();
+        A[2] = new Square();
+        A[3] = new Rhombus();
+        for(Shape s : A){
+            s.draw();
+        }
+    }
+}
+
+class Shape{
+    public void draw(){
+        System.out.println(&quot;我是楼下所有人的爸爸&quot;);
+    }
+}
+class Roundness extends Shape{
+    public void draw(){
+        System.out.println(&quot;我似鸽圆，莫得感情，也莫得钱&quot;);
+    }
+}
+class Square extends Shape{
+    public void draw(){
+        System.out.println(&quot;讲真的我现在有点方&quot;);
+    }
+}
+class Rhombus extends Shape{
+    public void draw() {
+        System.out.println(&quot;菱形(冷漠)&quot;);
+    }
+}
+</code></pre><p><img src="https://img-blog.csdnimg.cn/20181104151149761.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNDUzNjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/04/作业一号/" data-id="cjo2j3yfp0000sstvv2yzbjwu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/04/作业一号/" data-id="cjo2jx7k60001w0tvdjc3pl0u" class="article-share-link">Share</a>
       
       
     </footer>
@@ -95,15 +143,6 @@
   
     
 <nav id="article-nav">
-  
-    <a href="/2018/11/04/#shape作业/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
   
     <a href="/2018/11/04/你真的很不好，Hexo/" id="article-nav-older" class="article-nav-link-wrap">
@@ -143,10 +182,6 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2018/11/04/#shape作业/">(no title)</a>
-          </li>
         
           <li>
             <a href="/2018/11/04/作业一号/">作业一号</a>
