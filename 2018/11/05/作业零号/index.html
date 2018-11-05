@@ -5,21 +5,21 @@
   
 
   
-  <title>作业一号 | Hexo</title>
+  <title>post作业零号 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="package com.Shapes; public class Shapes {     public static void main(String[] args){         /*Shape shape = new Shape();         Shape roundness = new Roundness();         Shape square = new Square(">
+  <meta name="description" content="Box作业package com.Boxone;  public class Boxone {     public static void main(String[] args){         Box[] A = new Box[3];         A[0] = new Box(2,2,2);         A[1] = new Box(2,3,4);         A[2] = n">
 <meta property="og:type" content="article">
-<meta property="og:title" content="作业一号">
-<meta property="og:url" content="http://yoursite.com/2018/11/04/作业一号/index.html">
+<meta property="og:title" content="post作业零号">
+<meta property="og:url" content="http://yoursite.com/2018/11/05/作业零号/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="package com.Shapes; public class Shapes {     public static void main(String[] args){         /*Shape shape = new Shape();         Shape roundness = new Roundness();         Shape square = new Square(">
+<meta property="og:description" content="Box作业package com.Boxone;  public class Boxone {     public static void main(String[] args){         Box[] A = new Box[3];         A[0] = new Box(2,2,2);         A[1] = new Box(2,3,4);         A[2] = n">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/img/继承.png">
-<meta property="og:updated_time" content="2018-11-04T10:11:18.215Z">
+<meta property="og:image" content="http://yoursite.com/img/heihei.png">
+<meta property="og:updated_time" content="2018-11-05T09:43:12.372Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="作业一号">
-<meta name="twitter:description" content="package com.Shapes; public class Shapes {     public static void main(String[] args){         /*Shape shape = new Shape();         Shape roundness = new Roundness();         Shape square = new Square(">
-<meta name="twitter:image" content="http://yoursite.com/img/继承.png">
+<meta name="twitter:title" content="post作业零号">
+<meta name="twitter:description" content="Box作业package com.Boxone;  public class Boxone {     public static void main(String[] args){         Box[] A = new Box[3];         A[0] = new Box(2,2,2);         A[1] = new Box(2,3,4);         A[2] = n">
+<meta name="twitter:image" content="http://yoursite.com/img/heihei.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -66,10 +66,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-作业一号" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-作业零号" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/11/04/作业一号/" class="article-date">
-  <time datetime="2018-11-04T06:53:38.000Z" itemprop="datePublished">2018-11-04</time>
+    <a href="/2018/11/05/作业零号/" class="article-date">
+  <time datetime="2018-11-05T09:39:23.000Z" itemprop="datePublished">2018-11-05</time>
 </a>
     
   </div>
@@ -80,7 +80,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      作业一号
+      post作业零号
     </h1>
   
 
@@ -88,71 +88,41 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>package com.Shapes;</p>
-<pre><code>public class Shapes {
+        <h1 id="Box作业"><a href="#Box作业" class="headerlink" title="Box作业"></a>Box作业</h1><pre><code>package com.Boxone;
+
+public class Boxone {
     public static void main(String[] args){
-        /*Shape shape = new Shape();
-        Shape roundness = new Roundness();
-        Shape square = new Square();
-        Shape rhombus = new Rhombus();
-        shape.type();
-        shape.draw();
-        roundness.type();
-        roundness.draw();
-        square.type();
-        square.draw();
-        rhombus.type();
-        rhombus.draw();*/
-        Shape[] A = new Shape[4];
-        A[0] = new Shape();
-        A[1] = new Roundness();
-        A[2] = new Square();
-        A[3] = new Rhombus();
-        for(Shape s : A){
-            s.type();
-            s.draw();
+        Box[] A = new Box[3];
+        A[0] = new Box(2,2,2);
+        A[1] = new Box(2,3,4);
+        A[2] = new Box(9,8,7);
+        for(Box e : A){
+            e.ShowBox();
         }
     }
 }
 
-class Shape{
-    public void type(){
-        System.out.print(&quot;超类爸爸:&quot;);
+class Box{
+    private int length;
+    private int width;
+    private int height;
+
+    public Box( int length , int width , int height){
+        this.length = length;
+        this.width = width;
+        this.height = height;
     }
-    public void draw(){
-        System.out.println(&quot;我是楼下所有人的爸爸&quot;);
-    }
-}
-class Roundness extends Shape{
-    public void type(){
-        System.out.print(&quot;圆形:&quot;);
-    }
-    public void draw(){
-        System.out.println(&quot;我似鸽圆，莫得感情，也莫得钱&quot;);
-    }
-}
-class Square extends Shape{
-    public void type(){
-        System.out.print(&quot;方形:&quot;);
-    }
-    public void draw(){
-        System.out.println(&quot;讲真的我现在有点方&quot;);
+
+    public void ShowBox(){
+        System.out.println(&quot;lengh=&quot;+length+&apos;\t&apos;+&quot;width=&quot;+width+&apos;\t&apos;+&quot;height=&quot;+height);
     }
 }
-class Rhombus extends Shape{
-    public void type(){
-        System.out.print(&quot;菱形:&quot;);
-    }
-    public void draw() {
-        System.out.println(&quot;菱形(冷漠)&quot;);
-    }
-}
-</code></pre><p><img src="/img/继承.png" alt="example1"></p>
+</code></pre><p><img src="/img/heihei.png" alt="example1"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/04/作业一号/" data-id="cjo44c7x20002qstvwkm85g66" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/05/作业零号/" data-id="cjo44c7wz0001qstvrroiuv9d" class="article-share-link">Share</a>
       
       
     </footer>
@@ -161,19 +131,10 @@ class Rhombus extends Shape{
     
 <nav id="article-nav">
   
-    <a href="/2018/11/05/作业零号/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          post作业零号
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/11/04/你真的很不好，Hexo/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/11/04/作业一号/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">你真的很不好，Hexo</div>
+      <div class="article-nav-title">作业一号</div>
     </a>
   
 </nav>
