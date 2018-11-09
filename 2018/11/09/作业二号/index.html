@@ -1,39 +1,15 @@
-extends includes/layout
-
-block content
-
-    section#wrapper.post
-        article
-            header
-                h1!=page.title
-                h2.headline!=date(page.date, 'MMM DD, YYYY h:mm')
-                    |·
-                    |#{wordcount(page.content)} words
-                    |·
-                    |#{min2read(page.content)} minutes read
-                    span.tags
-
-            if toc(page.content)
-                div#toc!=toc(page.content,{list_number:false})
-
-            section#post-body!=page.content
-
-            - var prev = page.prev ? page.prev.path : false;
-            - var next = page.next ? page.next.path : false;
-            nav#post-nav
-                span.prev
-                    if page.prev
-                        a(href=url_for(prev))
-                            span.arrow ←
-                            | Newer Posts
-                span.next
-                    if page.next
-                        a(href=url_for(next))
-                            | Older Posts
-                            span.arrow →
-
-            include includes/comment.pug
-
-
-
-
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title>作业二号</title><link rel="shortcut icon" href="/images/avatar.png"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css"><script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script></head><body><nav class="main-nav"><a href="/">Home</a><a href="/archives">Archives</a></nav><div class="profile"><section id="wrapper"><header id="header"><a href="/about"><img class="2x" id="avatar" src="/images/avatar.png"></a><h1>Hexo</h1><h2></h2></header></section></div><section class="post" id="wrapper"><article><header><h1>作业二号</h1><h2 class="headline">Nov 09, 2018 11:13·
+222 words
+·
+1 minutes read<span class="tags"></span></h2></header><section id="post-body"><p>#接口作业①</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">package com.作业1;</span><br><span class="line"></span><br><span class="line">public class ABSTACT &#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        Animal 233 = new Animal();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">abstract class Animal&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/img/接口1.png" alt=""></p>
+<hr>
+<p>#接口作业②</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class ABSTACT &#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        Cylinder cylinder = new Cylinder(2.5,3.2);</span><br><span class="line">        cylinder.volume();</span><br><span class="line">        System.out.println(&quot;This Cylinder&apos;s area is &quot;+cylinder.area());</span><br><span class="line">        cylinder.setColor(&quot;blue&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public interface A &#123;</span><br><span class="line">    final double PI = 3.14;</span><br><span class="line">    public abstract double area();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public interface B &#123;</span><br><span class="line">    public abstract void setColor(String color);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public interface C extends A,B &#123;</span><br><span class="line">    public abstract void volume();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">public class Cylinder implements C &#123;</span><br><span class="line">    private double radius;</span><br><span class="line">    private double height;</span><br><span class="line">    private double area;</span><br><span class="line">    private double volume;</span><br><span class="line">    private String color;</span><br><span class="line"></span><br><span class="line">    public Cylinder (double radius , double height )&#123;</span><br><span class="line">        this.radius = radius;</span><br><span class="line">        this.height = height;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public double area()&#123;</span><br><span class="line">        double a;</span><br><span class="line">        double b;</span><br><span class="line">        a = radius*radius*PI;</span><br><span class="line">        b = 2*PI*radius*height;</span><br><span class="line">        area = 2*a+b;</span><br><span class="line">        return area;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void volume()&#123;</span><br><span class="line">        double a;</span><br><span class="line">        a = radius*radius*PI;</span><br><span class="line">        volume = a*height;</span><br><span class="line">        System.out.println(&quot;This Cylinder&apos;s volume is &quot;+volume);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setColor(String color)&#123;</span><br><span class="line">        this.color = color;</span><br><span class="line">        System.out.println(&quot;This Cylinder&apos;s color is &quot;+this.color);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/img/接口2.png" alt=""></p>
+</section><nav id="post-nav"><span class="prev"></span><span class="next"><a href="/2018/11/05/作业零号/">Older Posts<span class="arrow">→</span></a></span></nav></article></section><footer id="footer"><div id="social"><a class="symbol" href="https://github.com/fuzhouxxdong"><i class="fa fa-github"></i></a></div><p class="small">© Copyright 2018 &nbsp;<i class="fa fa-heart" aria-hidden="true">&nbsp;Dxx</i></p><p class="small">Powered by &nbsp;<a href="https://hexo.io/">Hexo &nbsp;</a>Theme By &nbsp;<a href="https://github.com/fuzhouxxdong/hexo-theme-dxx">Dxx</a></p></footer><script>hljs.initHighlightingOnLoad();</script></body></html>
