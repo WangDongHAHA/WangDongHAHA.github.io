@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>贰三三</title>
+  
+  <subtitle>他们说要稳扎稳打，又说青春需要挥洒。</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-11-09T03:14:13.939Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>汪汪</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>作业二号</title>
+    <link href="http://yoursite.com/2018/11/09/%E4%BD%9C%E4%B8%9A%E4%BA%8C%E5%8F%B7/"/>
+    <id>http://yoursite.com/2018/11/09/作业二号/</id>
+    <published>2018-11-09T03:13:04.000Z</published>
+    <updated>2018-11-09T03:14:13.939Z</updated>
+    
+    <content type="html"><![CDATA[<p>#接口作业①</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">package com.作业1;</span><br><span class="line"></span><br><span class="line">public class ABSTACT &#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        Animal 233 = new Animal();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">abstract class Animal&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/img/接口1.png" alt=""></p><hr><p>#接口作业②</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class ABSTACT &#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        Cylinder cylinder = new Cylinder(2.5,3.2);</span><br><span class="line">        cylinder.volume();</span><br><span class="line">        System.out.println(&quot;This Cylinder&apos;s area is &quot;+cylinder.area());</span><br><span class="line">        cylinder.setColor(&quot;blue&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public interface A &#123;</span><br><span class="line">    final double PI = 3.14;</span><br><span class="line">    public abstract double area();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public interface B &#123;</span><br><span class="line">    public abstract void setColor(String color);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public interface C extends A,B &#123;</span><br><span class="line">    public abstract void volume();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">public class Cylinder implements C &#123;</span><br><span class="line">    private double radius;</span><br><span class="line">    private double height;</span><br><span class="line">    private double area;</span><br><span class="line">    private double volume;</span><br><span class="line">    private String color;</span><br><span class="line"></span><br><span class="line">    public Cylinder (double radius , double height )&#123;</span><br><span class="line">        this.radius = radius;</span><br><span class="line">        this.height = height;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public double area()&#123;</span><br><span class="line">        double a;</span><br><span class="line">        double b;</span><br><span class="line">        a = radius*radius*PI;</span><br><span class="line">        b = 2*PI*radius*height;</span><br><span class="line">        area = 2*a+b;</span><br><span class="line">        return area;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void volume()&#123;</span><br><span class="line">        double a;</span><br><span class="line">        a = radius*radius*PI;</span><br><span class="line">        volume = a*height;</span><br><span class="line">        System.out.println(&quot;This Cylinder&apos;s volume is &quot;+volume);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setColor(String color)&#123;</span><br><span class="line">        this.color = color;</span><br><span class="line">        System.out.println(&quot;This Cylinder&apos;s color is &quot;+this.color);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/img/接口2.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#接口作业①&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>作业零号</title>
+    <link href="http://yoursite.com/2018/11/05/%E4%BD%9C%E4%B8%9A%E9%9B%B6%E5%8F%B7/"/>
+    <id>http://yoursite.com/2018/11/05/作业零号/</id>
+    <published>2018-11-05T09:39:23.000Z</published>
+    <updated>2018-11-05T10:02:07.362Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Box作业"><a href="#Box作业" class="headerlink" title="Box作业"></a>Box作业</h1><pre><code>package com.Boxone;public class Boxone {    public static void main(String[] args){        Box[] A = new Box[3];        A[0] = new Box(2,2,2);        A[1] = new Box(2,3,4);        A[2] = new Box(9,8,7);        for(Box e : A){            e.ShowBox();        }    }}class Box{    private int length;    private int width;    private int height;    public Box( int length , int width , int height){        this.length = length;        this.width = width;        this.height = height;    }    public void ShowBox(){        System.out.println(&quot;lengh=&quot;+length+&apos;\t&apos;+&quot;width=&quot;+width+&apos;\t&apos;+&quot;height=&quot;+height);    }}</code></pre><p><img src="/img/heihei.png" alt="example1"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Box作业&quot;&gt;&lt;a href=&quot;#Box作业&quot; class=&quot;headerlink&quot; title=&quot;Box作业&quot;&gt;&lt;/a&gt;Box作业&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;package com.Boxone;
+
+public class Boxone {
+    pub
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>作业一号</title>
+    <link href="http://yoursite.com/2018/11/04/%E4%BD%9C%E4%B8%9A%E4%B8%80%E5%8F%B7/"/>
+    <id>http://yoursite.com/2018/11/04/作业一号/</id>
+    <published>2018-11-04T06:53:38.000Z</published>
+    <updated>2018-11-04T10:11:18.215Z</updated>
+    
+    <content type="html"><![CDATA[<p>package com.Shapes;</p><pre><code>public class Shapes {    public static void main(String[] args){        /*Shape shape = new Shape();        Shape roundness = new Roundness();        Shape square = new Square();        Shape rhombus = new Rhombus();        shape.type();        shape.draw();        roundness.type();        roundness.draw();        square.type();        square.draw();        rhombus.type();        rhombus.draw();*/        Shape[] A = new Shape[4];        A[0] = new Shape();        A[1] = new Roundness();        A[2] = new Square();        A[3] = new Rhombus();        for(Shape s : A){            s.type();            s.draw();        }    }}class Shape{    public void type(){        System.out.print(&quot;超类爸爸:&quot;);    }    public void draw(){        System.out.println(&quot;我是楼下所有人的爸爸&quot;);    }}class Roundness extends Shape{    public void type(){        System.out.print(&quot;圆形:&quot;);    }    public void draw(){        System.out.println(&quot;我似鸽圆，莫得感情，也莫得钱&quot;);    }}class Square extends Shape{    public void type(){        System.out.print(&quot;方形:&quot;);    }    public void draw(){        System.out.println(&quot;讲真的我现在有点方&quot;);    }}class Rhombus extends Shape{    public void type(){        System.out.print(&quot;菱形:&quot;);    }    public void draw() {        System.out.println(&quot;菱形(冷漠)&quot;);    }}</code></pre><p><img src="/img/继承.png" alt="example1"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;package com.Shapes;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class Shapes {
+    public static void main(String[] args){
+        /*Shape shape = new Shape();
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>你真的很不好，Hexo</title>
+    <link href="http://yoursite.com/2018/11/04/%E4%BD%A0%E7%9C%9F%E7%9A%84%E5%BE%88%E4%B8%8D%E5%A5%BD%EF%BC%8CHexo/"/>
+    <id>http://yoursite.com/2018/11/04/你真的很不好，Hexo/</id>
+    <published>2018-11-04T06:27:09.000Z</published>
+    <updated>2018-11-04T06:27:09.712Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>你很不好,hexo</title>
+    <link href="http://yoursite.com/2018/10/30/%E4%BD%A0%E5%BE%88%E4%B8%8D%E5%A5%BD-hexo/"/>
+    <id>http://yoursite.com/2018/10/30/你很不好-hexo/</id>
+    <published>2018-10-30T14:50:56.000Z</published>
+    <updated>2018-10-30T14:50:56.661Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/10/30/hello-world/"/>
+    <id>http://yoursite.com/2018/10/30/hello-world/</id>
+    <published>2018-10-30T12:29:10.521Z</published>
+    <updated>2018-10-30T12:29:10.521Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
